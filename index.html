@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<link rel="icon" href="data:,">
+<title>MHIC en Español — Prepárate para tu Licencia de Contratista de Maryland</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --orange:#ff7a00; --yellow:#ffc400; --asphalt:#14181d; --asphalt2:#1e242c; --paper:#f7f2e7; --paper2:#fffdf6;
+  --ink:#14181d; --muted:#5a5346; --line:#ddd3bd; --green:#177245; --green-bg:#e6f4ea;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"Barlow",system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.55;font-size:17px}
+h1,h2,h3{font-family:"Barlow Condensed",sans-serif;text-transform:uppercase;line-height:.95;letter-spacing:.02em;margin:0}
+.mono{font-family:"IBM Plex Mono",monospace}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.hazard{height:14px;background:repeating-linear-gradient(45deg,var(--yellow) 0 18px,#14181d 18px 36px)}
+.hazard-sm{height:8px;background:repeating-linear-gradient(45deg,var(--yellow) 0 12px,#14181d 12px 24px)}
+/* TOP BAR */
+.topbar{position:sticky;top:0;z-index:50;background:var(--asphalt);color:#fff;border-bottom:4px solid var(--yellow)}
+.topbar-in{display:flex;align-items:center;gap:16px;padding:10px 20px;max-width:1180px;margin:0 auto;flex-wrap:wrap}
+.brand{font-family:"Barlow Condensed",sans-serif;font-weight:800;text-transform:uppercase;font-size:19px;line-height:1;text-decoration:none}
+.brand span{color:var(--yellow)}
+.brand small{display:block;font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#c9cdd3;font-weight:500;margin-top:3px}
+nav.main{margin-left:auto;display:flex;gap:4px;align-items:center;flex-wrap:wrap}
+nav.main a{color:#e8eaed;text-decoration:none;font-weight:600;font-size:15px;padding:10px 10px;min-height:40px;display:inline-flex;align-items:center}
+nav.main a:hover{color:var(--yellow)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 22px;font-weight:700;text-decoration:none;border:2px solid var(--asphalt);font-size:16px;cursor:pointer}
+.btn-orange{background:var(--orange);color:#14181d;border-color:#14181d;box-shadow:4px 4px 0 #14181d}
+.btn-yellow{background:var(--yellow);color:#14181d;border-color:var(--yellow)}
+.btn-ghost{background:transparent;color:#fff;border-color:#fff}
+.btn-dark{background:var(--asphalt);color:#fff;border-color:var(--asphalt)}
+.top-cta{background:var(--orange)!important;color:#14181d!important;padding:10px 16px!important;border:2px solid var(--orange)}
+/* HERO */
+.hero{background:var(--asphalt);color:#fff;padding:56px 0 64px;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;right:-80px;top:40px;width:340px;height:340px;border:2px dashed rgba(255,196,0,.35);transform:rotate(45deg)}
+.badge{display:inline-flex;align-items:center;gap:8px;background:var(--yellow);color:#14181d;font-family:"IBM Plex Mono",monospace;font-weight:700;font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;padding:8px 14px;border:2px solid #14181d}
+.badge:before{content:"⚠";font-size:16px}
+.hero h1{font-size:clamp(44px,7.5vw,84px);font-weight:800;max-width:820px;margin:22px 0 18px}
+.hero h1 em{font-style:normal;color:var(--yellow)}
+.hero p.lead{font-size:19px;line-height:1.6;max-width:680px;color:#e6e8eb;margin:0 0 24px}
+.hero p.lead strong{color:#fff}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 30px}
+.chip{font-family:"IBM Plex Mono",monospace;font-size:13px;font-weight:600;border:1.5px solid #4a5563;padding:9px 13px;background:#1e242c;color:#f3f4f6}
+.chip b{color:var(--yellow)}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.hero-note{margin-top:20px;font-size:13.5px;color:#aeb4bc;max-width:620px}
+/* SECTIONS */
+section{padding:64px 0}
+.sec-head{margin-bottom:36px;max-width:760px}
+.kicker{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#8a5a00;background:#ffe9a8;display:inline-block;padding:6px 10px;margin-bottom:14px}
+.sec-head h2{font-size:clamp(32px,5vw,52px);font-weight:800}
+.sec-head p{color:var(--muted);font-size:17.5px;margin:12px 0 0}
+/* RUTA */
+.route{position:relative;margin-top:10px}
+.route:before{content:"";position:absolute;left:27px;top:10px;bottom:10px;border-left:4px dashed #b9ac8d}
+@media(min-width:760px){.route:before{left:50%;margin-left:-2px}}
+.station{display:grid;grid-template-columns:56px 1fr;gap:18px;position:relative;margin-bottom:28px}
+@media(min-width:760px){
+  .station{grid-template-columns:1fr 72px 1fr;gap:0;margin-bottom:36px}
+  .station .card{grid-column:1}
+  .station:nth-child(even) .card{grid-column:3}
+  .station .diamond-wrap{grid-column:2;grid-row:1}
+}
+.diamond-wrap{display:flex;justify-content:center;align-items:flex-start;padding-top:6px;z-index:1}
+.diamond{width:54px;height:54px;background:var(--orange);border:3px solid var(--asphalt);transform:rotate(45deg);display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:3px 3px 0 rgba(20,24,29,.25)}
+.diamond span{transform:rotate(-45deg);font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:26px;color:#14181d}
+.diamond.green{background:var(--green);border-color:var(--asphalt)}
+.diamond.green span{color:#fff;font-size:24px}
+.card{background:var(--paper2);border:2px solid var(--asphalt);padding:22px 22px 18px;box-shadow:5px 5px 0 rgba(20,24,29,.12)}
+.card h3{font-size:26px;font-weight:700;margin-bottom:8px}
+.card h3 small{display:block;font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.14em;color:var(--orange);text-transform:uppercase;margin-bottom:6px;font-weight:700}
+.card p{margin:0 0 14px;color:#33302a}
+.tag{display:inline-block;font-family:"IBM Plex Mono",monospace;font-size:12.5px;font-weight:700;background:var(--asphalt);color:var(--yellow);padding:7px 10px;line-height:1.4}
+.tag.free{background:var(--green);color:#fff}
+/* CURSO DARK */
+.dark{background:var(--asphalt);color:#eef0f2}
+.dark .sec-head p{color:#b9bfc7}
+.dark .kicker{background:var(--orange);color:#14181d}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-bottom:44px}
+@media(min-width:820px){.stats{grid-template-columns:repeat(4,1fr)}}
+.stat{border:2px solid #3a434f;background:var(--asphalt2);padding:20px}
+.stat b{display:block;font-family:"Barlow Condensed",sans-serif;font-size:38px;line-height:1;color:var(--yellow);text-transform:uppercase}
+.stat span{display:block;margin-top:8px;font-size:15px;line-height:1.45;color:#d6dae0}
+details.module,details.faq{background:var(--paper2);color:var(--ink);border:2px solid var(--asphalt);margin-bottom:10px}
+.dark details.module{background:#fffdf6}
+details summary{cursor:pointer;list-style:none;display:flex;gap:14px;align-items:flex-start;padding:16px 18px;min-height:52px}
+details summary::-webkit-details-marker{display:none}
+.mod-code{font-family:"IBM Plex Mono",monospace;font-weight:700;background:var(--asphalt);color:var(--yellow);padding:4px 8px;font-size:13px;flex-shrink:0;margin-top:2px}
+.mod-title{font-weight:700;font-size:16.5px;line-height:1.35;flex:1}
+.mod-tag{font-family:"IBM Plex Mono",monospace;font-size:11.5px;font-weight:700;background:#ffe9a8;border:1.5px solid var(--asphalt);padding:4px 7px;white-space:nowrap;margin-top:2px}
+details .body{padding:0 18px 18px 18px;color:#3d382e;font-size:15.5px;border-top:1.5px dashed var(--line)}
+details .body p{margin:12px 0 0}
+.plus{font-family:"Barlow Condensed",sans-serif;font-size:24px;line-height:1;color:var(--orange);font-weight:800}
+.traps{margin-top:28px;background:var(--yellow);color:#14181d;border:3px solid #14181d;padding:24px;box-shadow:6px 6px 0 rgba(0,0,0,.35)}
+.traps h3{font-size:28px;margin-bottom:12px}
+.traps ul{margin:0;padding-left:20px;font-weight:600}
+.traps li{margin:6px 0}
+/* PRECIOS */
+.chart{background:var(--paper2);border:2px solid var(--asphalt);padding:24px;box-shadow:6px 6px 0 rgba(20,24,29,.12);margin-bottom:14px}
+.chart h3{font-size:26px;margin-bottom:20px}
+.bar-row{margin-bottom:16px}
+.bar-label{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:14.5px;margin-bottom:6px}
+.bar-label b{font-weight:700}
+.bar-label .price{font-family:"IBM Plex Mono",monospace;font-weight:700}
+.bar-track{background:#ece5d3;height:26px;border:1.5px solid var(--asphalt);position:relative}
+.bar-fill{height:100%;background:#8b8574}
+.bar-fill.academia{background:var(--orange)}
+.bar-fill.free{background:var(--green)}
+.footnote{font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--muted)}
+.tiers{display:grid;grid-template-columns:1fr;gap:18px;margin-top:36px}
+@media(min-width:760px){.tiers{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1020px){.tiers{grid-template-columns:repeat(4,1fr)}}
+.tier{background:var(--paper2);border:2.5px solid var(--asphalt);display:flex;flex-direction:column;overflow:hidden}
+.tier-top{padding:18px 18px 14px;border-bottom:2px solid var(--asphalt);position:relative}
+.tier-top .hazard-sm{position:absolute;top:0;left:0;right:0}
+.tier h3{font-size:28px;margin-top:8px}
+.tier-price{font-family:"Barlow Condensed",sans-serif;font-size:42px;font-weight:800;line-height:1;margin:6px 0 2px}
+.tier-price small{font-size:16px;font-family:"IBM Plex Mono",monospace;font-weight:600}
+.tier-body{padding:16px 18px;flex:1;font-size:15.5px;color:#33302a}
+.tier-body ul{margin:0;padding-left:18px}
+.tier-body li{margin:6px 0}
+.tier-foot{padding:0 18px 18px}
+.tier-foot .btn{width:100%}
+.tier.featured{border-color:var(--orange);box-shadow:6px 6px 0 var(--orange)}
+.pill{display:inline-block;background:var(--orange);color:#14181d;font-family:"IBM Plex Mono",monospace;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:5px 8px;border:1.5px solid var(--asphalt)}
+.pill.green{background:var(--green);color:#fff}
+.pockets{margin-top:28px;background:var(--asphalt);color:#fff;padding:22px 24px;display:flex;gap:16px;align-items:flex-start}
+.pockets .ico{font-size:28px;line-height:1}
+.pockets p{margin:0;font-size:16.5px}
+.pockets strong{color:var(--yellow)}
+/* FAQ */
+details.faq summary{font-weight:700;font-size:16.5px;align-items:center}
+/* NOTA HONESTA */
+.nota{border:3px solid var(--asphalt);background:#fff8e1;padding:26px;max-width:900px;margin:0 auto}
+.nota h2{font-size:30px;margin-bottom:12px;display:flex;gap:10px;align-items:center}
+.nota p{margin:0;font-size:15.5px;line-height:1.65;color:#2e2a22}
+/* CONTACTO */
+.contact-grid{display:grid;grid-template-columns:1fr;gap:28px}
+@media(min-width:860px){.contact-grid{grid-template-columns:1fr 1.25fr}}
+form{background:var(--paper2);border:2px solid var(--asphalt);padding:24px;box-shadow:6px 6px 0 rgba(20,24,29,.12)}
+label{display:block;font-weight:700;font-size:14.5px;margin:16px 0 6px}
+label:first-child{margin-top:0}
+input,select,textarea{width:100%;padding:12px 12px;border:2px solid #b9ac8d;background:#fff;font:inherit;font-size:16px;min-height:48px}
+textarea{min-height:120px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:3px solid var(--yellow);border-color:var(--asphalt)}
+.banner{display:none;background:var(--green-bg);border:2px solid var(--green);color:#14532d;padding:16px 18px;font-weight:700;margin-bottom:20px}
+.banner.show{display:block}
+footer{background:var(--asphalt);color:#c9cdd3;padding:36px 0 44px;text-align:center}
+footer .fbrand{font-family:"Barlow Condensed",sans-serif;text-transform:uppercase;font-weight:800;font-size:24px;color:#fff}
+footer .fbrand span{color:var(--yellow)}
+footer p{margin:10px auto 0;max-width:640px;font-size:14.5px}
+@media(max-width:640px){
+  nav.main a{padding:8px 6px;font-size:14px}
+  .brand{font-size:16px}
+  section{padding:48px 0}
+  .mod-tag{white-space:normal}
+  details summary{flex-wrap:wrap}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-in">
+    <a class="brand" href="#inicio">MHIC <span>en Español</span><small>Academia del Profe Omar</small></a>
+    <nav class="main" aria-label="Principal">
+      <a href="#ruta">La ruta</a>
+      <a href="#curso">El curso</a>
+      <a href="#precios">Precios</a>
+      <a href="#preguntas">Preguntas</a>
+      <a href="#contacto">Contacto</a>
+      <a class="top-cta" href="https://payhip.com/b/jL6lG">Empezar gratis</a>
+    </nav>
+  </div>
+  <div class="hazard-sm"></div>
+</header>
+
+<!-- HERO -->
+<div class="hero" id="inicio">
+  <div class="wrap">
+    <span class="badge">Zona de obra: contratistas sin licencia</span>
+    <h1>La obra ya la sabes hacer. <em>Te falta el papel.</em></h1>
+    <p class="lead">En Maryland, hacer mejoras del hogar sin la licencia MHIC es un delito — y te cierra los trabajos grandes. Este curso grabado, <strong>100% en español</strong>, te prepara para el examen de PSI y te guía papel por papel hasta la solicitud. Sin faltar un día a la obra y sin pagar el curso presencial de $699.</p>
+    <div class="chips">
+      <span class="chip"><b>55</b> preguntas · <b>39</b> para pasar</span>
+      <span class="chip">Examen en español — se escoge al registrarte</span>
+      <span class="chip"><b>46</b> lecciones · <b>211</b> preguntas de práctica</span>
+      <span class="chip">Desde <b>$0</b> — el Mini es gratis</span>
+    </div>
+    <div class="hero-ctas">
+      <a class="btn btn-orange" href="https://payhip.com/b/jL6lG">Empezar con el Mini gratis →</a>
+      <a class="btn btn-ghost" href="#precios">Ver la comparativa de precios</a>
+    </div>
+    <p class="hero-note">Curso privado de preparación. No es la Comisión MHIC ni un proveedor oficial del estado de Maryland.</p>
+  </div>
+</div>
+<div class="hazard"></div>
+
+<!-- LA RUTA -->
+<section id="ruta">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">La ruta · Paso a paso</span>
+      <h2>De “sin licencia” a “licencia en mano”: la ruta tiene 5 estaciones</h2>
+      <p>No es solo un examen. Es una ruta completa — y cada estación tiene su módulo dentro del curso.</p>
+    </div>
+    <div class="route">
+      <article class="station">
+        <div class="diamond-wrap"><div class="diamond"><span>1</span></div></div>
+        <div class="card">
+          <h3><small>Estación 1</small>¿Calificas? La experiencia</h3>
+          <p>El estado exige <strong>2 años de experiencia verificable</strong> en mejoras del hogar o construcción. Existen sustituciones. Ojo: PSI verifica tu experiencia <strong>antes</strong> de darte la cita del examen — por eso esta estación va primero.</p>
+          <span class="tag free">Módulos 0 y 1 del curso — GRATIS en el Mini</span>
+        </div>
+      </article>
+      <article class="station">
+        <div class="diamond-wrap"><div class="diamond"><span>2</span></div></div>
+        <div class="card">
+          <h3><small>Estación 2</small>Aprobación y registro en PSI</h3>
+          <p>Subes la prueba de tu experiencia en línea, compras el libro oficial <strong>NASCLA, 7ª edición</strong> (existe edición en español) y al registrarte escoges tomar el examen <strong>en español</strong>.</p>
+          <span class="tag">El curso te enseña el registro paso a paso</span>
+        </div>
+      </article>
+      <article class="station">
+        <div class="diamond-wrap"><div class="diamond"><span>3</span></div></div>
+        <div class="card">
+          <h3><small>Estación 3</small>El examen</h3>
+          <p><strong>55 preguntas, 150 minutos, a libro abierto.</strong> La Ley MHIC sola es 41 de las 55 preguntas (75%). Necesitas 39 correctas para pasar. Si fallas, esperas 30 días para repetirlo.</p>
+          <span class="tag">Examen PSI: $63 por intento · Módulos 2–11 del curso</span>
+        </div>
+      </article>
+      <article class="station">
+        <div class="diamond-wrap"><div class="diamond"><span>4</span></div></div>
+        <div class="card">
+          <h3><small>Estación 4</small>La solicitud, papel por papel</h3>
+          <p>Estado financiero, reporte de crédito, estados de banco, nombre comercial en SDAT y seguro de responsabilidad civil de <strong>$500,000</strong> — la cifra vigente desde octubre de 2024. Los papeles viejos que dicen $50,000 están desactualizados, y el examen lo sabe.</p>
+          <span class="tag">Tarifas al estado: $403.75 · Módulo 12 del curso</span>
+        </div>
+      </article>
+      <article class="station">
+        <div class="diamond-wrap"><div class="diamond green"><span>✓</span></div></div>
+        <div class="card">
+          <h3><small>Estación 5 · Meta</small>Licencia en mano</h3>
+          <p>La Comisión emite tu licencia por <strong>2 años</strong>. Tu número va en tus anuncios, en tu truck y en tus contratos — y los trabajos grandes se abren.</p>
+          <span class="tag">Renovación cada 2 años — también se enseña</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- EL CURSO -->
+<section id="curso" class="dark">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">El curso por dentro</span>
+      <h2>Todo el temario oficial, explicado en español</h2>
+      <p>Construido pregunta por pregunta sobre el temario que publica PSI. Toca cada módulo para ver qué trae.</p>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>46</b><span>lecciones en video (≈2 horas)</span></div>
+      <div class="stat"><b>211</b><span>preguntas de práctica estilo PSI, explicadas en español</span></div>
+      <div class="stat"><b>2</b><span>simulacros completos de 55 preguntas cronometrados (150 min)</span></div>
+      <div class="stat"><b>PDF</b><span>Guía de la Ruta a la Licencia con checklist imprimible</span></div>
+    </div>
+
+    <details class="module"><summary><span class="mod-code">M00</span><span class="mod-title">Bienvenida y la ruta completa (los 5 pasos y los costos reales)</span><span class="mod-tag">Todos los niveles</span><span class="plus">+</span></summary><div class="body"><p>El mapa completo: las 5 estaciones de la ruta, cuánto cuesta cada paso y en qué orden se hace todo.</p></div></details>
+    <details class="module"><summary><span class="mod-code">M01</span><span class="mod-title">¿Calificas? La experiencia de 2 años (qué cuenta, sustituciones, cómo documentarla)</span><span class="mod-tag">Todos los niveles</span><span class="plus">+</span></summary><div class="body"><p>Qué experiencia acepta PSI, qué sustituciones existen y cómo documentarla para que te aprueben antes de la cita.</p></div></details>
+    <details class="module"><summary><span class="mod-code">M02</span><span class="mod-title">La Ley I: la Comisión y la licencia</span><span class="mod-tag">Ley MHIC · 41 de 55</span><span class="plus">+</span></summary><div class="body"><p>Qué es la Comisión MHIC, quién necesita licencia y qué trabajos cubre la ley.</p></div></details>
+    <details class="module"><summary><span class="mod-code">M03</span><span class="mod-title">La Ley II: el contrato perfecto (elementos obligatorios, regla del tercio: depósito máximo 1/3)</span><span class="mod-tag">Ley MHIC · 41 de 55</span><span class="plus">+</span></summary><div class="body"><p>Todo lo que un contrato válido debe llevar — y la regla del tercio que el examen pregunta una y otra vez.</p></div></details>
+    <details class="module"><summary><span class="mod-code">M04</span><span class="mod-title">La Ley III: Fondo de Garantía y sanciones (Fondo paga hasta $30,000/$250,000)</span><span class="mod-tag">Ley MHIC · 41 de 55</span><span class="plus">+</span></summary><div class="body"><p>Cómo funciona el Fondo de Garantía, cuánto paga y qué sanciones aplican por trabajar sin licencia.</p></div></details>
+    <details class="module"><summary><span class="mod-code">M05</span><span class="mod-title">La Ley IV: montar el negocio (formas de empresa, SDAT, el seguro de $500,000)</span><span class="mod-tag">Ley MHIC · 41 de 55</span><span class="plus">+</span></summary><div class="body"><p>Formas de empresa, registro en SDAT y el seguro de responsabilidad civil con la cifra vigente.</p></div></details>
+    <details class="module"><summary><span class="mod-code">M06</span><span class="mod-title">La Ley V: operar el negocio (estimados, subcontratistas, empleados, liens)</span><span class="mod-tag">Ley MHIC · 41 de 55</span><span class="plus">+</span></summary><div class="body"><p>Las reglas del día a día: estimados, subcontratistas, empleados y mechanic's liens.</p></div></details>
+    <details class="module"><summary><span class="mod-code">M07</span><span class="mod-title">Ley de Ventas Puerta a Puerta (cancelación: 5 días laborables; 7 si el comprador tiene 65+)</span><span class="mod-tag">4 preguntas</span><span class="plus">+</span></summary><div class="body"><p>El derecho de cancelación en Maryland: 5 días laborables — 7 si el comprador tiene 65 años o más.</p></div></details>
+    <details class="module"><summary><span class="mod-code">M08</span><span class="mod-title">Seguridad y leyes laborales (OSHA/MOSH, salario mínimo MD $15.00/h, workers' comp)</span><span class="mod-tag">4 + 3 preguntas</span><span class="plus">+</span></summary><div class="body"><p>Seguridad en la obra y leyes laborales de Maryland, con las cifras que entran al examen.</p></div></details>
+    <details class="module"><summary><span class="mod-code">M09</span><span class="mod-title">Estimados que ganan trabajos</span><span class="mod-tag">3 preguntas</span><span class="plus">+</span></summary><div class="body"><p>Cómo se arma un estimado correcto — y cómo lo pregunta el examen.</p></div></details>
+    <details class="module"><summary><span class="mod-code">M10</span><span class="mod-title">Estrategia de examen a libro abierto (cómo tabular el libro, método de las tres pasadas)</span><span class="mod-tag">Nivel Completo</span><span class="plus">+</span></summary><div class="body"><p>El examen es a libro abierto: aprende a tabular tu NASCLA y el método de las tres pasadas para no quedarte sin tiempo.</p></div></details>
+    <details class="module"><summary><span class="mod-code">M11</span><span class="mod-title">Simulacros completos (2 de 55 preguntas + repaso en video)</span><span class="mod-tag">Nivel Completo</span><span class="plus">+</span></summary><div class="body"><p>Dos exámenes completos, cronometrados a 150 minutos, con repaso en video de cada respuesta.</p></div></details>
+    <details class="module"><summary><span class="mod-code">M12</span><span class="mod-title">Pasaste: la solicitud de licencia paso a paso ($403.75, checklist de documentos)</span><span class="mod-tag">Nivel Completo</span><span class="plus">+</span></summary><div class="body"><p>Aprobaste — ahora el papeleo. Cada documento, cada tarifa y el orden exacto para someter tu solicitud.</p></div></details>
+    <details class="module"><summary><span class="mod-code">M13</span><span class="mod-title">Bono: examen de vendedor (35 preguntas, para licenciar a tu equipo de ventas)</span><span class="mod-tag">Solo Todo Incluido</span><span class="plus">+</span></summary><div class="body"><p>Prepara también a tu equipo: el examen de vendedor MHIC, de 35 preguntas y sin requisito de experiencia.</p></div></details>
+    <details class="module"><summary><span class="mod-code">🎓</span><span class="mod-title">Graduación y tu plan final de 7 días</span><span class="mod-tag">Todos los niveles</span><span class="plus">+</span></summary><div class="body"><p>Tu plan de repaso de los últimos 7 días antes del examen, día por día.</p></div></details>
+
+    <div class="traps">
+      <h3>⚠ Las trampas del examen, señaladas</h3>
+      <ul>
+        <li>Seguro de <strong>$500,000</strong> (no $50,000 — esa cifra quedó atrás en octubre de 2024)</li>
+        <li>Cancelación puerta a puerta: <strong>5 días en Maryland</strong> (no los 3 días federales)</li>
+        <li>Fondo de Garantía: <strong>$30,000 / $250,000</strong></li>
+        <li>Depósito máximo: <strong>1/3 del contrato</strong> antes de empezar</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<div class="hazard"></div>
+
+<!-- PRECIOS -->
+<section id="precios">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Precios · Sin humo</span>
+      <h2>Lo que cobra el mercado vs. lo que cobra la Academia</h2>
+    </div>
+    <div class="chart">
+      <h3>La comparativa: lo que cobra el mercado vs. lo que cobra la Academia</h3>
+      <div class="bar-row"><div class="bar-label"><span><b>Golden Lion Multiservices</b> — presencial, 2 sábados</span><span class="price">$699</span></div><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div></div>
+      <div class="bar-row"><div class="bar-label"><span><b>MHICPREP</b> — presencial, 1 sábado</span><span class="price">$599</span></div><div class="bar-track"><div class="bar-fill" style="width:85.7%"></div></div></div>
+      <div class="bar-row"><div class="bar-label"><span><b>Instituto de Contratistas</b> — grabado en línea, acceso 180 días</span><span class="price">$381</span></div><div class="bar-track"><div class="bar-fill" style="width:54.5%"></div></div></div>
+      <div class="bar-row"><div class="bar-label"><span><b>Montgomery College</b> — remoto, 6 sesiones</span><span class="price">$295</span></div><div class="bar-track"><div class="bar-fill" style="width:42.2%"></div></div></div>
+      <div class="bar-row"><div class="bar-label"><span><b>Contractor Training Center</b> — en línea, EN INGLÉS</span><span class="price">$247</span></div><div class="bar-track"><div class="bar-fill" style="width:35.3%"></div></div></div>
+      <div class="bar-row"><div class="bar-label"><span><b>ACADEMIA DEL PROFE OMAR</b> — Completo, grabado en español, a tu ritmo</span><span class="price">$179.99</span></div><div class="bar-track"><div class="bar-fill academia" style="width:25.7%"></div></div></div>
+      <div class="bar-row"><div class="bar-label"><span><b>ACADEMIA</b> — Esencial</span><span class="price">$99</span></div><div class="bar-track"><div class="bar-fill academia" style="width:14.2%"></div></div></div>
+      <div class="bar-row"><div class="bar-label"><span><b>ACADEMIA</b> — Mini</span><span class="price">GRATIS · $0</span></div><div class="bar-track"><div class="bar-fill free" style="width:3%"></div></div></div>
+      <p class="footnote">Precios verificados el 21 de noviembre de 2026.</p>
+    </div>
+
+    <div class="tiers">
+      <article class="tier">
+        <div class="tier-top"><div class="hazard-sm"></div><span class="pill green">Para probar</span><h3>Mini</h3><div class="tier-price">$0 <small>GRATIS</small></div></div>
+        <div class="tier-body"><ul><li>Módulos 0 y 1 completos</li><li>Simulacro corto de 15 preguntas</li><li>La ruta completa y los costos reales</li></ul></div>
+        <div class="tier-foot"><a class="btn btn-dark" href="https://payhip.com/b/jL6lG">Empezar gratis</a></div>
+      </article>
+      <article class="tier">
+        <div class="tier-top"><div class="hazard-sm"></div><span class="pill">El temario</span><h3>Esencial</h3><div class="tier-price">$99</div></div>
+        <div class="tier-body"><ul><li>Módulos 0–9: todo el temario del examen</li><li>Guía de la Ruta a la Licencia (PDF)</li><li>Prácticas por módulo</li></ul></div>
+        <div class="tier-foot"><a class="btn btn-dark" href="https://payhip.com/b/uCpte">Comprar Esencial</a></div>
+      </article>
+      <article class="tier featured">
+        <div class="tier-top"><div class="hazard-sm"></div><span class="pill">El que compite</span><h3>Completo</h3><div class="tier-price">$179.99</div></div>
+        <div class="tier-body"><ul><li>Todo el Esencial</li><li>Estrategia de examen a libro abierto (M10)</li><li>Simulacros completos con repaso en video (M11)</li><li>La solicitud paso a paso (M12)</li></ul></div>
+        <div class="tier-foot"><a class="btn btn-orange" href="https://payhip.com/b/Wvf19">Comprar Completo</a></div>
+      </article>
+      <article class="tier">
+        <div class="tier-top"><div class="hazard-sm"></div><span class="pill">Con tu equipo</span><h3>Todo Incluido</h3><div class="tier-price">$249.99</div></div>
+        <div class="tier-body"><ul><li>Todo el Completo</li><li>Módulo 13: Examen de Vendedor</li><li>Simulacro de vendedor de 35 preguntas</li><li>Extras de la guía</li></ul></div>
+        <div class="tier-foot"><a class="btn btn-dark" href="https://payhip.com/b/VEJTz">Comprar Todo Incluido</a></div>
+      </article>
+    </div>
+
+    <div class="pockets">
+      <div class="ico">🧾</div>
+      <p><strong>Dos bolsillos, sin mezclar:</strong> El curso es un bolsillo. El estado es otro: examen PSI $63 + tarifas de licencia $403.75 + tu seguro. Aquí nadie te mezcla los números.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PREGUNTAS -->
+<section id="preguntas" style="padding-top:20px">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Preguntas comunes</span>
+      <h2>Preguntas comunes — ya contestadas</h2>
+      <p>Las mismas dudas que llegan todos los días, contestadas aquí mismo, sin vueltas.</p>
+    </div>
+    <details class="faq"><summary>¿El examen se puede tomar en español?<span class="plus">+</span></summary><div class="body"><p>Sí. Se escoge al registrarte en PSI y el libro oficial NASCLA tiene edición en español. El curso te entrena con cada pregunta escuchada en inglés y explicada en español, para que llegues listo a cualquiera de las dos versiones.</p></div></details>
+    <details class="faq"><summary>¿Qué necesito para calificar?<span class="plus">+</span></summary><div class="body"><p>2 años de experiencia verificable en mejoras del hogar o construcción (hay sustituciones que explica el Módulo 1, que es gratis en el Mini), solvencia financiera y, ya para la licencia, seguro de responsabilidad civil de $500,000.</p></div></details>
+    <details class="faq"><summary>¿Este curso me da la licencia?<span class="plus">+</span></summary><div class="body"><p>No. La licencia la emite únicamente la Comisión MHIC después de que apruebas el examen de PSI y sometes tu solicitud. Este curso te prepara para el examen y te guía en la solicitud.</p></div></details>
+    <details class="faq"><summary>¿Garantizan que apruebo?<span class="plus">+</span></summary><div class="body"><p>No, y desconfía de quien lo prometa. Lo que sí garantizamos es el contenido: el temario oficial completo, 211 preguntas de práctica y simulacros cronometrados.</p></div></details>
+    <details class="faq"><summary>¿Cuánto cuesta todo el proceso?<span class="plus">+</span></summary><div class="body"><p>Curso: desde $0 (Mini) hasta $249.99. Estado: examen PSI $63 por intento + tarifas de licencia $403.75 ($281.25 + $100 del Fondo + $22.50), más tu seguro de $500,000 y el libro oficial.</p></div></details>
+    <details class="faq"><summary>¿Cuánto dura el acceso al curso?<span class="plus">+</span></summary><div class="body"><p>Sin mensualidad y sin fecha de corte: pagas una vez y el material es tuyo, descargable en Payhip, para estudiar a tu ritmo. (El único grabado de la competencia corta el acceso a los 180 días.)</p></div></details>
+    <details class="faq"><summary>¿A qué hora son las clases?<span class="plus">+</span></summary><div class="body"><p>No hay horario: son videos grabados. Estudias de noche, en el truck o en el break, desde tu teléfono.</p></div></details>
+    <details class="faq"><summary>¿Qué libro necesito para el examen?<span class="plus">+</span></summary><div class="body"><p>El NASCLA Contractor's Guide, Maryland Home Improvement, 7ª edición (la vigente). Se compra en la tienda de PSI y hay edición en español. El curso te enseña a tabularlo legalmente.</p></div></details>
+    <details class="faq"><summary>Ya fallé el examen una vez, ¿me sirve?<span class="plus">+</span></summary><div class="body"><p>Sí: el examen se repite a los 30 días y el curso ataca justo donde cae la gente: la Ley MHIC es el 75% del examen y aquí lleva 5 módulos completos, más simulacros cronometrados.</p></div></details>
+    <details class="faq"><summary>¿Puedo licenciar también a mis vendedores?<span class="plus">+</span></summary><div class="body"><p>Sí: el examen de vendedor (35 preguntas, sin requisito de experiencia) se prepara en el Módulo 13, incluido en el nivel Todo Incluido.</p></div></details>
+    <details class="faq"><summary>Todavía no tengo los 2 años de experiencia, ¿compro el curso?<span class="plus">+</span></summary><div class="body"><p>Empieza con el Mini gratis: el Módulo 1 te dice exactamente qué cuenta como experiencia y cómo documentarla mientras la completas.</p></div></details>
+  </div>
+</section>
+
+<!-- NOTA HONESTA -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="nota">
+      <h2>La nota honesta</h2>
+      <p>Curso privado de preparación de la Academia del Profe Omar. No es la Comisión MHIC, ni el Departamento de Labor de Maryland, ni PSI, ni un proveedor oficial del estado de Maryland. Este curso no otorga la licencia de contratista ni garantiza aprobar el examen. La licencia la emite únicamente la Comisión MHIC tras aprobar el examen oficial y cumplir todos los requisitos del estado. Las preguntas de práctica son material de estudio propio de la Academia, construido sobre el temario oficial publicado por PSI; no son preguntas reales del examen.</p>
+    </div>
+  </div>
+</section>
+<div class="hazard"></div>
+
+<!-- CONTACTO -->
+<section id="contacto" style="background:var(--paper)">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div>
+        <span class="kicker">Contacto · Por correo</span>
+        <h2 style="font-size:clamp(32px,5vw,48px);font-weight:800;margin-bottom:14px">¿Otra pregunta? Escríbenos — te contesta una persona</h2>
+        <p style="color:var(--muted);font-size:17px">Tu mensaje llega por correo y te contestamos en español, normalmente el mismo día. Déjanos tu pregunta en el formulario y pendiente a tu bandeja de entrada.</p>
+        <p style="font-size:15px"><strong>¿Prefieres empezar ya?</strong><br>El Mini es gratis y trae los Módulos 0 y 1: <a href="https://payhip.com/b/jL6lG" style="font-weight:700;color:#b35c00">Empezar con el Mini gratis →</a></p>
+      </div>
+      <div>
+        <div class="banner" id="enviado-banner" role="status">¡Mensaje enviado! Te contestamos por correo, pendiente a tu bandeja.</div>
+        <form method="POST" action="https://formsubmit.co/leydelswing@gmail.com">
+          <label for="nombre">Tu nombre *</label>
+          <input id="nombre" name="nombre" type="text" required autocomplete="name" placeholder="Ej.: Carlos Rivera">
+          <label for="correo">Tu correo electrónico *</label>
+          <input id="correo" name="correo" type="email" required autocomplete="email" placeholder="tucorreo@ejemplo.com">
+          <label for="telefono">Tu teléfono (opcional, solo si prefieres que te llamemos)</label>
+          <input id="telefono" name="telefono" type="tel" autocomplete="tel" placeholder="Opcional">
+          <label for="tema">Tema de tu mensaje</label>
+          <select id="tema" name="tema">
+            <option>Quiero empezar con el Mini gratis</option>
+            <option>Duda sobre si califico (experiencia)</option>
+            <option>Duda sobre precios</option>
+            <option>Ya compré y necesito ayuda</option>
+            <option>Otra pregunta</option>
+          </select>
+          <label for="mensaje">Tu mensaje *</label>
+          <textarea id="mensaje" name="mensaje" required placeholder="Cuéntanos tu duda…"></textarea>
+          <input type="hidden" name="_subject" value="MHIC en Español — mensaje desde la página">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_cc" value="swingbravo@gmail.com">
+          <input type="hidden" name="_next" value="https://pippen32.github.io/mhic-espanol/index.html?enviado=1#contacto">
+          <button class="btn btn-orange" type="submit" style="width:100%;margin-top:20px">Enviar mi pregunta</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fbrand">MHIC <span>en Español</span> · Academia del Profe Omar</div>
+    <p>Preparación privada para el examen MHIC de Maryland. Precios de la competencia verificados el 21 de noviembre de 2026.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  try{
+    var params = new URLSearchParams(window.location.search);
+    if(params.get('enviado')==='1'){
+      var b=document.getElementById('enviado-banner');
+      if(b){ b.classList.add('show'); b.scrollIntoView({block:'center'}); }
+    }
+  }catch(e){}
+})();
+</script>
+</body>
+</html>
